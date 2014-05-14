@@ -1,4 +1,6 @@
 Videoapp::Application.routes.draw do
+  resources :chapters
+
   resources :courses
 
   root "pages#home"
