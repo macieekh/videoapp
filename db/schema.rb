@@ -11,7 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140514222438) do
+ActiveRecord::Schema.define(version: 20140514223052) do
+
+  create_table "chapter_elements", force: true do |t|
+    t.string   "title"
+    t.string   "description"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "chapters", force: true do |t|
     t.string   "title"
@@ -19,7 +27,10 @@ ActiveRecord::Schema.define(version: 20140514222438) do
     t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "course_id"
   end
+
+  add_index "chapters", ["course_id"], name: "index_chapters_on_course_id"
 
   create_table "courses", force: true do |t|
     t.string   "title"
