@@ -1,4 +1,6 @@
 Videoapp::Application.routes.draw do
+  resources :chapter_elements
+
   resources :chapters
 
   resources :courses
