@@ -30,6 +30,9 @@ gem 'jbuilder', '~> 1.2'
 # Bootstrap
 gem 'bootstrap-sass'
 
+# Wistia
+gem 'wistia'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
