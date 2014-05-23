@@ -5,6 +5,11 @@ Videoapp::Application.routes.draw do
 
   resources :courses
 
+  resources :uploads
+
+  get '/uploads', to: 'uploads#hello'
+  post '/uploads', to: 'uploads#uploadFile'
+
   root "pages#home"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
