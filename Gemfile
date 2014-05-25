@@ -30,6 +30,8 @@ gem 'jbuilder', '~> 1.2'
 # Bootstrap
 gem 'bootstrap-sass'
 
+gem 'multipart-post'
+
 # Wistia
 # gem 'wistia'
 

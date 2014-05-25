@@ -8,7 +8,7 @@ Videoapp::Application.routes.draw do
   resources :uploads
 
   get '/uploads', to: 'uploads#hello'
-  post '/uploads', to: 'uploads#uploadFile'
+  post '/uploads', to: 'uploads#post_video_to_wistia'
 
   root "pages#home"
   # The priority is based upon order of creation: first created -> highest priority.
