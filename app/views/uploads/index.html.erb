@@ -1,7 +1,7 @@
 <h1>File Upload</h1>
 
 
-<%= form_tag('/post_video_to_wistia', method: :post, multipart: true) do %>
+<%= form_tag('/uploads', action: "post_video_to_wistia", method: :post, multipart: true) do %>
  
 <%= file_field 'picture', 'datafile' %></p>
 <%= submit_tag "Upload" %>

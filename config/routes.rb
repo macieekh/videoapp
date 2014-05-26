@@ -5,9 +5,9 @@ Videoapp::Application.routes.draw do
 
   resources :courses
 
-  resources :uploads
+ # resources :uploads
 
-  get '/uploads', to: 'uploads#hello'
+  get '/uploads', to: 'uploads#index'
   post '/uploads', to: 'uploads#post_video_to_wistia'
 
   root "pages#home"
